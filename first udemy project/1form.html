@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>online form fill</title>
+		<link rel="stylesheet" href="1form.css">
+		<!-- <style>
+			form {
+				border: 2px solid black;
+				padding: 5px;
+				max-width: 600px;
+			}
+			label {
+				font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+					"Lucida Sans", Arial, sans-serif;
+				font-size: bold;
+			}
+			input,
+			select {
+				width: 200px;
+				height: 40px;
+				background-color: antiquewhite;
+				font-style: italic;
+				color: aqua;
+				font-size: 2em;
+				margin-bottom: 10px;
+			}
+			button {
+				width: 90px;
+				text-align: center;
+				font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+					sans-serif;
+				max-height: 50px;
+				font-size: 1em;
+				background-color: palevioletred;
+				color: black;
+				align-items: center;
+			}
+			#Beauty checkbox {
+				width: 2px;
+				height: 2px;
+			}
+			#Beauty {
+				font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+					"Lucida Sans", Arial, sans-serif;
+				font-size: 1em;
+			}
+		</style> -->
+		<!-- <style>
+			input {
+				width: 100%;
+				padding: 5px;
+				border: 2px solid black;
+				margin-bottom: 5px;
+			}
+			input:focus {
+				background-color: bisque;
+				color: darkkhaki;
+			}
+			select {
+				width: 20%;
+			}
+		</style> -->
+	</head>
+	<body class="body">
+		<section>
+			<h1 class="main">Welcome to HoneyDripples Online Form Fill</h1>
+			<i class="logo">...baking exquisite cakes to please your taste buds...</i>
+			<form action="#" method="get">
+				<div>
+					<label for="name">Client Name:</label>
+					<input type="text" value="name" placeholder="name please" />
+				</div>
+				<div>
+					<label for="contact">Contact Number:</label>
+					<input
+						type="number"
+						value="contact"
+						placeholder="00000000"
+						required
+					/>
+				</div>
+
+				<div>
+					<label for="design"> Cake Design:</label>
+					<input type="radio" id="Male" name="design" required />Male
+					<input type="radio" id="Female" name="design" required />Female
+					<input type="radio" id="Unisex" name="design" required />Unisex
+				</div>
+				<div>
+					<label for="date">Date of Order:</label>
+					<input type="date" value="date" />
+
+					<label for="date">Date for Delivery:</label>
+					<input type="datetime-local" value="Date" required />
+				</div>
+
+				<div id="Beauty">
+					<label for="beauty"> Cake Beauty:</label>
+					<input type="checkbox" id="Beauty" value="Lusterdust" />Lusterdust
+					<input type="checkbox" id="Beauty" value="Drips" />Drips
+					<input type="checkbox" id="Beauty" value="Chocolates" />Chocolates
+					<input type="checkbox" id="Beauty" value="Stickers" />Stickers
+					<input type="checkbox" id="Beauty" value="Gold Balls" />Gold Balls
+					<input type="checkbox" id="Beauty" value="Butterflies" />Butterflies
+					<input type="checkbox" id="Beauty" value="Pictures" />Pictures
+				</div>
+
+				<div>
+					<label for="layers">Cake Layers:</label>
+					<input
+						type="number"
+						name="digit"
+						id="digit"
+						min="1"
+						max="20"
+						placeholder="09"
+						required
+					/>
+				</div>
+				<div>
+					<label for="size">Cake Size:</label>
+					<input
+						type="number"
+						name="size"
+						id="Size"
+						min="3"
+						max="16"
+						required
+					/>
+				</div>
+				<div class="flavors">
+					Cake Flavours:
+					<label for="flavors">Milky Vanilla</label>
+					<input type="checkbox" name="flavors" required />
+					<label for="flavors">Moist Red Velvet</label>
+					<input type="checkbox" name="flavors" required />
+					<label for="flavors">Rich Dark Chocolates</label>
+					<input type="checkbox" name="flavors" required />
+					<label for="flavors">Lemon</label>
+					<input type="checkbox" name="flavors" required />
+					<label for="flavors">Coconut</label>
+					<input type="checkbox" name="flavors" required />
+					<label for="flavors">Moist Carrots</label>
+					<input type="checkbox" name="flavors" required />
+					<label for="flavors">Rich Fruit Cake</label>
+					<input type="checkbox" name="flavors" required />
+					<label for="flavors">Banana</label>
+					<input type="checkbox" name="flavors" required />
+				</div>
+
+				<div>
+					<label for="Cake Form">Cake Form</label>
+					<select name="form" id="Cake Form">
+						<option value="buttercream">Buttercream</option>
+						<option value="whipped cream">Whipped Cream</option>
+						<option value="fondant">Fondant</option>
+						<option value="swiss meringue">Swiss Meringue</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="color" class="color">Cake Color:</label>
+					<input type="color" />
+				</div>
+
+				<div class="event">
+					Event:
+					<label for="event">Graduation</label>
+					<input type="radio" name="event" required />
+					<label for="event">Wedding</label>
+					<input type="radio" name="event" required />
+					<label for="event">Birthday</label>
+					<input type="radio" name="event" required />
+					<label for="event">Anniversary</label>
+					<input type="radio" name="event" required />
+				</div>
+			</form>
+
+			<button type="submit">ORDER</button>
+		</section>
+	</body>
+</html>

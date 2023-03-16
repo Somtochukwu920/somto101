@@ -1,0 +1,94 @@
+body {
+	background-color: burlywood;
+}
+.main {
+	display: flex;
+}
+/* nav {
+	border: 3px solid green;
+	display: flex;
+	justify-content: flex-end;
+	height: 30px;
+	width: 50%;
+	font-size: large;
+
+} */
+nav{
+	/* border: 1px solid black; */
+	justify-content: space-between;
+	width: 100%;
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: space-between;
+    /* right: -200px; */
+    /* flex-wrap: wrap; */
+    bottom:10px;
+    align-items:flex-end;
+    font-size: 20px;
+    padding: 0px;
+    line-height: 0px;
+    padding-left:50px;
+    padding-right: 50px;
+}
+.head {
+	text-align: center;
+	text-decoration: underline;
+	text-shadow: 1px;
+	font-variant: normal;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	color: rgb(41, 3, 15);
+}
+
+span {
+	font-size: large;
+	text-decoration: underline;
+	font-style: italic;
+	margin: 5px 5px 0px 0px;
+}
+.images {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	justify-content: end;
+
+}
+.sizes {
+	width: 300px;
+	height: 280px;
+	margin: 9px;
+	border-radius: 50%;
+}
+.soom {
+	width: 300px;
+	height: 300px;
+	margin: 9px;
+	border-radius: 50%;
+}
+dfn {
+	font-style: oblique;
+	color: rgb(87, 66, 99);
+	font-weight: bolder;
+	font-size: medium;
+	display: inline;
+}
+#oven {
+	font-size: large;
+	font-style: italic;
+}
+
+.flex_list {
+	display: flex;
+}
+.flex_list div:first-child {
+	width: 60%;
+}
+
+@media screen and (max-width: 480px) {
+	body {
+		background-color: lightgreen;
+	}
+	.flex_list {
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,27 @@
+body{
+    padding: 10px;
+    border: 1px solid black;
+    margin: 15px;
+}
+section{
+    background-color: rgb(154, 155, 90);
+    padding: 5px;
+    height: 100vh;
+}
+.main{
+    color: rgb(41, 39, 39);
+    text-indent: 20%;
+    text-transform: capitalize;
+}
+i.logo{
+    text-decoration: underline;
+    color: rgb(63, 65, 63);
+    text-align: center;
+}
+input{
+    border: 1px solid rgb(218, 5, 5);
+    width: 25%;
+}
+label{
+    display: block;
+}
